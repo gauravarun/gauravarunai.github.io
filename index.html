@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaurav Arun — AI Engineer & Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>GA<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span>Open to Work · Open to Relocate</span>
+      </div>
+      <h1 class="hero-name">Gaurav Arun</h1>
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">~/portfolio</span>
+        </div>
+        <div class="terminal-body">
+          <span class="t-prompt">$ </span><span id="terminalText"></span><span class="t-cursor">▌</span>
+        </div>
+      </div>
+      <p class="hero-sub">
+        MSc AI Student · Software Developer · XR Engineer<br />
+        Building intelligent systems at the intersection of AI, immersive tech, and scalable software.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge"><span class="badge-icon">📍</span>Berlin, Germany</span>
+        <span class="badge"><span class="badge-icon">🌍</span>Open to Relocate</span>
+        <span class="badge"><span class="badge-icon">🎓</span>MSc Artificial Intelligence</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm an <span class="highlight">Artificial Intelligence graduate student</span> with hands-on professional experience in software development, AI applications, and immersive technologies.
+          </p>
+          <p>
+            I specialize in building <span class="highlight">scalable backend systems</span>, training machine learning models, and crafting interactive applications across web, desktop, and XR environments.
+          </p>
+          <p>
+            My background spans from production software at logistics and packaging companies, to developing 3D interactive applications using Unity, to researching deep learning pipelines for human intention prediction.
+          </p>
+          <p>
+            I'm actively seeking <span class="highlight">Software Engineer / AI Engineer</span> roles where I can contribute to meaningful, cutting-edge products.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Languages (+ learning DE)</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card-col reveal">
+          <div class="info-card">
+            <div class="info-card-header">
+              <span class="ic-icon">⚡</span>
+              <span>Quick Info</span>
+            </div>
+            <ul class="info-list">
+              <li><span class="il-label">Location</span><span class="il-val">Berlin, Germany</span></li>
+              <li><span class="il-label">Relocation</span><span class="il-val badge-green">✓ Open</span></li>
+              <li><span class="il-label">Status</span><span class="il-val badge-green">Available</span></li>
+              <li><span class="il-label">English</span><span class="il-val">Fluent · C1</span></li>
+              <li><span class="il-label">German</span><span class="il-val">Intermediate</span></li>
+              <li><span class="il-label">Focus</span><span class="il-val">AI / SWE / XR</span></li>
+            </ul>
+          </div>
+          <div class="info-card mt-16">
+            <div class="info-card-header">
+              <span class="ic-icon">🎓</span>
+              <span>Education</span>
+            </div>
+            <div class="edu-item">
+              <div class="edu-degree">MSc Artificial Intelligence</div>
+              <div class="edu-school">Berlin School of Business and Innovation</div>
+              <div class="edu-year">2024 – Present</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-degree">B.Tech Mechanical Engineering</div>
+              <div class="edu-school">Reva University, Bengaluru</div>
+              <div class="edu-year">2018 – 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-label">02 / Experience</div>
+      <h2 class="section-title">Work History</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="tl-dot active"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Ops Associate</h3>
+                <div class="tc-company">FLINK · Berlin, Germany</div>
+              </div>
+              <span class="tc-date">Feb 2025 – Present</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Worked with real-time inventory and order management systems in a high-volume logistics environment</li>
+              <li>Assisted in resolving process disruptions during peak operational periods</li>
+              <li>Supported workflow optimization and adherence to safety and quality standards</li>
+              <li>Coordinated with site teams to maintain operational efficiency</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">Logistics Tech</span>
+              <span class="tag">Ops Systems</span>
+              <span class="tag">Process Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Unity Developer</h3>
+                <div class="tc-company">INNOGENX · Bengaluru, India</div>
+              </div>
+              <span class="tc-date">Aug 2023 – Sep 2024</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Developed interactive 3D applications using Unity and C#</li>
+              <li>Implemented gameplay mechanics, UI systems, and performance optimizations</li>
+              <li>Contributed to AR/VR solutions and user-facing features</li>
+              <li>Participated in code reviews and iterative product improvements</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">AR/VR</span>
+              <span class="tag">3D Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Software Developer</h3>
+                <div class="tc-company">HARDEE FLEXIPACK · Bengaluru, India</div>
+              </div>
+              <span class="tc-date">Aug 2022 – Jul 2023</span>
+            </div>
+            <ul class="tc-bullets">
+              <li>Developed and maintained production software systems and internal tools</li>
+              <li>Built backend services and automated workflows improving operational efficiency</li>
+              <li>Diagnosed and resolved software defects across multiple modules</li>
+              <li>Collaborated with cross-functional teams to deliver reliable releases</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">Backend</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Production Systems</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="pc-glow"></div>
+          <div class="pc-tag featured-tag">Thesis Project</div>
+          <div class="pc-icon">🧠</div>
+          <h3>Human Intention Prediction</h3>
+          <p>End-to-end deep learning pipeline integrated with ROS for real-time human intention prediction. Modular architecture with optimized inference latency for deployment in distributed robotic systems.</p>
+          <div class="pc-tech">
+            <span>Python</span><span>PyTorch</span><span>ROS</span><span>Deep Learning</span><span>Distributed Systems</span>
+          </div>
+          <div class="pc-footer">
+            <a href="https://github.com/gauravarun" target="_blank" class="pc-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-glow"></div>
+          <div class="pc-icon">🏥</div>
+          <h3>VR Ankle Surgery Simulator</h3>
+          <p>Immersive VR-based training simulation replicating real-world surgical procedures. Step-based interaction systems, physics-based object manipulation, and intuitive UX with stable frame rates.</p>
+          <div class="pc-tech">
+            <span>Unity</span><span>C#</span><span>XR Toolkit</span><span>3D Assets</span>
+          </div>
+          <div class="pc-footer">
+            <a href="https://github.com/gauravarun" target="_blank" class="pc-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-glow"></div>
+          <div class="pc-icon">🤖</div>
+          <h3>LLM-Powered RAG Pipelines</h3>
+          <p>Applications integrating large language models with semantic search. Implemented document retrieval, embeddings, and automated response generation. Designed scalable pipelines for real-world use cases.</p>
+          <div class="pc-tech">
+            <span>Python</span><span>LLMs</span><span>RAG</span><span>Embeddings</span><span>FastAPI</span>
+          </div>
+          <div class="pc-footer">
+            <a href="https://github.com/gauravarun" target="_blank" class="pc-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-glow"></div>
+          <div class="pc-icon">❤️</div>
+          <h3>AI Heart Disease Prediction</h3>
+          <p>Machine learning models for medical risk prediction. Full pipeline from data preprocessing and feature engineering to model evaluation with interpretable, clinically relevant results.</p>
+          <div class="pc-tech">
+            <span>Python</span><span>scikit-learn</span><span>ML</span><span>Data Analysis</span>
+          </div>
+          <div class="pc-footer">
+            <a href="https://github.com/gauravarun" target="_blank" class="pc-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-glow"></div>
+          <div class="pc-icon">🔮</div>
+          <h3>Mixed Reality Health Monitor</h3>
+          <p>Interactive 3D visualization for real-time health data on HoloLens. User-centric UI for intuitive clinical decision support. Cross-device compatibility with modular architecture.</p>
+          <div class="pc-tech">
+            <span>Unity</span><span>C#</span><span>HoloLens</span><span>MR</span><span>REST APIs</span>
+          </div>
+          <div class="pc-footer">
+            <a href="https://github.com/gauravarun" target="_blank" class="pc-link">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="pc-glow"></div>
+          <div class="pc-icon">🛒</div>
+          <h3>GROCER — Smart Vending Machine</h3>
+          <p>Automated grocery vending machine capable of dispensing exact quantities of grains and pulses. Minimized human involvement with improved accuracy, hygiene, and operational efficiency.</p>
+          <div class="pc-tech">
+            <span>Embedded Systems</span><span>Automation</span><span>Hardware Design</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">2021–2022</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">04 / Skills</div>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">💻</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-hot">Python</span>
+            <span class="pill pill-hot">C#</span>
+            <span class="pill">Java</span>
+            <span class="pill">C++</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">🧠</span>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-hot">PyTorch</span>
+            <span class="pill pill-hot">TensorFlow</span>
+            <span class="pill pill-hot">NLP / LLMs</span>
+            <span class="pill pill-hot">RAG</span>
+            <span class="pill">scikit-learn</span>
+            <span class="pill">OpenCV</span>
+            <span class="pill">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">⚙️</span>
+            <h3>Backend & Web</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-hot">FastAPI</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">🥽</span>
+            <h3>XR & Graphics</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-hot">Unity3D</span>
+            <span class="pill pill-hot">AR/VR/MR</span>
+            <span class="pill">HoloLens</span>
+            <span class="pill">3D Interaction Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">NoSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="sg-header">
+            <span class="sg-icon">🔧</span>
+            <h3>DevOps & Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Docker</span>
+            <span class="pill">Git</span>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">Linux</span>
+            <span class="pill">CI/CD</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub reveal">
+        I'm actively looking for Software Engineer and AI Engineer roles. Based in Berlin, open to relocation globally. Let's build something great together.
+      </p>
+      <div class="contact-grid reveal">
+        <a href="mailto:gauravarun21@gmail.com" class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <div class="cc-label">Email</div>
+          <div class="cc-val">gauravarun21@gmail.com</div>
+        </a>
+        <a href="https://linkedin.com/in/gaurav-arun-528b6733a/" target="_blank" class="contact-card">
+          <div class="cc-icon">💼</div>
+          <div class="cc-label">LinkedIn</div>
+          <div class="cc-val">gaurav-arun-528b6733a</div>
+        </a>
+        <a href="https://github.com/gauravarun" target="_blank" class="contact-card">
+          <div class="cc-icon">🐙</div>
+          <div class="cc-label">GitHub</div>
+          <div class="cc-val">github.com/gauravarun</div>
+        </a>
+        <div class="contact-card no-link">
+          <div class="cc-icon">📱</div>
+          <div class="cc-label">Phone</div>
+          <div class="cc-val">(+49) 15510823145</div>
+        </div>
+      </div>
+      <div class="cta-block reveal">
+        <a href="mailto:gauravarun21@gmail.com" class="btn-primary btn-large">Say Hello 👋</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Gaurav Arun<span class="logo-bracket">/&gt;</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/gauravarun" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/gaurav-arun-528b6733a/" target="_blank">LinkedIn</a>
+          <a href="mailto:gauravarun21@gmail.com">Email</a>
+        </div>
+        <div class="footer-note">Designed & Built with ♥ · Berlin 2026</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
