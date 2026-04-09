@@ -12,9 +12,8 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => na
 
 // ===== TERMINAL TYPEWRITER =====
 const lines = [
-  'AI Engineer & Software Developer',
+  'AI Engineer · Python · LLMs · Agentic Systems · Unity/C#',
   'Building LLMs · RAG · Computer Vision',
-  'Unity3D · AR/VR/MR · XR Experiences',
   'Open to exciting opportunities →',
 ];
 let lineIdx = 0, charIdx = 0, deleting = false, pause = 0;
